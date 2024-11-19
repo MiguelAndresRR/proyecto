@@ -4,7 +4,7 @@ RewriteCond %{HTTPS} off
 RewriteCond %{HTTP_HOST} (www\.)?gestiondeambientes\.com
 RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
 
-ErrorDocument 404 http://localhost/proyecto/ErrorController/index
+ErrorDocument 404 http://localhost/protecto/ErrorController/index
 
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
